@@ -1,0 +1,89 @@
+.add-todo-modal {
+  position: relative;
+  width: 70%;
+  border: 1px #638bb3 solid;
+  border-radius: 10px;
+}
+
+.add-todo-modal-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1rem;
+  padding: 1.2rem 0.7rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+
+.modal-header__input-name {
+  flex: 1 1 30%;
+  border: 1px #638bb3 solid;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.input {
+  border: 1px #638bb3 solid;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  flex: 1;
+  background-color: #222428;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.submit-btn:disabled {
+  color: #d7d8da;
+  background-color: #383a3e;
+}
+
+.close-btn {
+  flex: 1;
+  background-color: #eb445a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.textarea-wrapper {
+  position: relative;
+
+  & textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px #638bb3 solid;
+    resize: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  & span {
+    position: absolute;
+    right: 7px;
+    bottom: 7px;
+    font-size: 0.85rem;
+  }
+}

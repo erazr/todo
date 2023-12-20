@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}

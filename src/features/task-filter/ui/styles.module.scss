@@ -1,0 +1,44 @@
+.toggle-btn-wrapper {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-btn-group {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  border: 1px #626264 solid;
+  border-radius: 10px;
+
+  & .toggle-btn:not(:last-child) {
+    border-right: 1px #626264 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .toggle-btn {
+    color: #626264;
+    cursor: pointer;
+    padding: 0.35rem 0.8rem;
+  }
+}
+.toggle-btn[data-active="completed-active"],
+.toggle-btn[data-active="completed"]:hover {
+  color: #2dd36f;
+  background-color: #e5faed;
+}
+
+.toggle-btn[data-active="in-progress-active"],
+.toggle-btn[data-active="in-progress"]:hover {
+  color: #e0ac08;
+  background-color: #fff8e1;
+}
+
+.toggle-btn[data-active="pending-active"],
+.toggle-btn[data-active="pending"]:hover {
+  color: #383a3e;
+  background-color: #d7d8da;
+}

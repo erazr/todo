@@ -1,0 +1,68 @@
+.dropdown-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 71px;
+  font-size: 0.85rem;
+  border: 1px #222428 solid;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.55rem 1rem;
+
+  &[data-status="Completed"] {
+    color: #2dd36f;
+    border-color: #e5faed;
+    background-color: #e5faed;
+  }
+  &[data-status="In progress"] {
+    color: #e0ac08;
+    border-color: #fff8e1;
+    background-color: #fff8e1;
+  }
+  &[data-status="Pending"] {
+    color: #383a3e;
+    border-color: #d7d8da;
+    background-color: #d7d8da;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  overflow: hidden;
+  left: -10px;
+  right: -10px;
+  bottom: -105px;
+  margin: 0;
+  font-size: 0.85rem;
+  background-color: #fff;
+  border: 1px #d7d8da solid;
+  border-radius: 10px;
+  z-index: 10;
+  padding: 0;
+
+  & li {
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+  }
+
+  & li[data-status="completed"] {
+    color: #2dd36f;
+  }
+  & li[data-status="completed"]:hover {
+    background-color: #e5faed;
+  }
+
+  & li[data-status="in-progress"] {
+    color: #e0ac08;
+  }
+  & li[data-status="in-progress"]:hover {
+    background-color: #fff8e1;
+  }
+
+  & li[data-status="pending"] {
+    color: #383a3e;
+  }
+  & li[data-status="pending"]:hover {
+    background-color: #d7d8da;
+  }
+}
